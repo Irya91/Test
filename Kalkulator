@@ -1,0 +1,22 @@
+#!/bin/bash
+
+read -p "podaj liczbe a: " a
+read -p "podaj liczbe b: " b
+read -p "podaj liczbe c: " c
+
+echo "Dodawanie: $((a + b + c))"
+echo "Odejmowanie: $((a - b - c))"
+echo "Mnozenie: $((a * b * c))"
+echo "Dzielenie: $((a / b / c))"
+
+if [ $((a + b + c)) == 20 ] ; then
+	echo "The"
+elif [ $((a - b - c)) == 20 ] ; then
+	echo "winner"
+elif [ $((a * b * c)) == 20 ] ; then
+	echo "is"
+elif [ $((a / b / c)) == 20 ] ; then
+	echo "cool"
+else
+	echo "looser"
+fi
